@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WebSIDE </title>
+		<link rel="stylesheet" href="ProjektKontakt.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+        <div class="backgroundImage">
+            <header>
+                <nav>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </div>
+                        <ul class="nav-menu" id="nav-menu"> 
+                            <li ><a href="index.html" >start</a></li>        
+                            <li ><a href="ProjektMenu.html" >menu</a></li>
+                            <li ><a href="ProjektGaleria.html" >galeria</a></li>
+                            <li ><a href="ProjektKontakt.html" >kontakt</a></li>
+                        
+                        </ul>
+                    </nav>
+                    
+                </header>
+
+            <div class="box">
+                <p>KONTAKT</p>
+            </div>
+
+            <div class="box2">
+                <p>Aby otrzymać fakturę dodaj taką informację dla obsługi z numerem NIP</p><br>
+                <form>
+                    <label for="wybor">Wybierz lokal: </label>
+                    <select name="choose" id="choose" onchange="funtionChoose()">
+                        <option value="Gdynia">Gdynia</option>
+                        <option value="Gdańsk">Gdańsk</option>
+                        
+                    </select>
+                </form>
+
+            </div>
+            <br><br><br>
+            <div class="box3">
+                <div class="boxKontakt1" id="boxKontakt1">
+                   
+                    <p>Gdynia - Trójmiasto Burger <br>
+                        ul. Miętowa 43 <br>
+                        81-368 Gdynia <br>
+                        321 321 432<br>
+                          Gdynia</p>
+                </div>
+                <div class="boxKontakt2">
+                        <p>
+                        <Details>
+                            <Summary>Godziny otwarcia</summary>
+                            <P>Poniedziałek 10-22</P>
+                            <P>Wtorek 10-22</P>
+                            <P>Środa 10-22</P>
+                            <P>Czwartek 10-22</P>
+                            <P>Piątek 10-23</P>
+                            <P>Sobota 10-23</P>
+                            <P>Niedziela 12-21:30</P>
+                        </details>
+                    </p>
+                        
+                         
+                </div>
+                <div class="boxKontakt3">
+                    <p>
+                        <Details>
+                            <Summary>Godziny Dostaw</summary>
+                            <P>Poniedziałek 11-21:30</P>
+                            <P>Wtorek 11-21:30</P>
+                            <P>Środa 11-21:30</P>
+                            <P>Czwartek 11-21:30</P>
+                            <P>Piątek 11-22:30</P>
+                            <P>Sobota 11-22:30</P>
+                            <P>Niedziela 12:30-21</P>
+                        </details>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+		<script src="ProjektKontakt.js"></script>
+	
+	</body>
+</html>

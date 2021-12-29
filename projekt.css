@@ -1,0 +1,201 @@
+header{
+    background-image:  linear-gradient(to left, rgb(59, 53, 53,.6)  ,rgb(0, 0, 0,.6) 40% , rgb(44, 41, 41,.6),white ) ;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    
+   
+}
+
+body{
+    background-image: url("burger1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+li{
+    list-style: none;
+    font-size: 2rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(3, 24, 46);
+   
+   }
+
+
+.box{
+       /*background-color: red */
+    height: 150px;
+    width: 100%;
+    margin-top: 13%;
+    position: relative;
+  
+}
+.box2{
+    /*background-color: blue; */
+    height: 150px;
+    width: 100%;
+   
+    position: relative;
+  
+}
+.box p{
+    font-size: 6rem;
+    color: blanchedalmond;
+    top: 30%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.box2 p{
+    font-size: 2rem;
+    color: blanchedalmond;
+    top: 30%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    border: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(206, 97, 47);
+    position: relative;
+    margin-left: 44%;
+
+}
+
+button:hover{
+    background-color: rgb(204, 39, 39);
+}
+
+
+.nav{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+
+}
+.nav-menu{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+.hamburger {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    right: 5%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s;
+   
+   
+  }
+  .hamburger span{
+      background-color: white;
+      width: 100%;
+      height: 3px;
+
+  }
+.nav-ul li a{
+    display: inline-block;
+    color: white;
+    
+    padding: 10px 20px;
+    text-decoration: none;
+}
+@media  screen and (max-width: 500px) {
+    body{
+        background-image: url("burger1.jpg");
+        background-repeat: no-repeat;     
+        background-size: 100% 100%;
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+       
+    }
+    header{  background-image: none ;
+      
+        margin-top: 30px;
+        width: 100%;
+        height: 100px;
+        padding: 0px;
+        
+       
+    }
+    .nav-menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .nav-menu.show{
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(to left, rgb(59, 53, 53,.6)  ,rgb(0, 0, 0,.6) 40% , rgb(44, 41, 41,.6),white );
+        margin-left: 0%;
+        display: flex;
+    }
+    .hamburger{
+        display: flex;
+       
+    }
+     a{
+       
+      
+        display: inline-block;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    .box{
+       
+     height: 150px;
+     width: 100%;
+  
+    }
+    .box2{
+    
+         height: 200px;
+         width: 100%;
+ 
+    }
+
+    .box p{
+        font-size: 2.5rem;
+    }
+    .box2 p{
+        font-size: 1rem;
+    }
+    .button{
+        margin-left: 30%;
+    }
+    
+}
